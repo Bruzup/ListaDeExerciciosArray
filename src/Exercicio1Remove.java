@@ -15,8 +15,9 @@ public class Exercicio1Remove {
         System.out.println("++++++++++++++++++++++++++++++++++++++++++");
         System.out.println(lista);
 
-        System.out.println("Em qual posição deseja adicionar o elemento?");
-        int AdicionaNoIndice = input.nextInt();
+        System.out.println("Em qual posição deseja remover o elemento?");
+        int elementoRemover = input.nextInt();
+        lista.remove(elementoRemover);
 
 
         System.out.println("Lista de array modificada : " + lista);

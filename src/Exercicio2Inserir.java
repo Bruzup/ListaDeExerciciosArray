@@ -15,9 +15,13 @@ public class Exercicio2Inserir {
         System.out.println("++++++++++++++++++++++++++++++++++++++++++");
         System.out.println("Lista original: " + lista);
 
-        System.out.println("Qual elemento deseja remover da lista?");
-        int removeIndice = input.nextInt();
-        lista.remove(removeIndice);
+        System.out.println("O que falta adicionar na mala?");
+        String novoElemento = input.nextLine();
+
+        System.out.println("Em qual posição?");
+        int posicaoInsercao = input.nextInt();
+
+        lista.add(posicaoInsercao, novoElemento);
 
         System.out.println("Lista de array modificada : " + lista);
     }
